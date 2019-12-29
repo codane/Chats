@@ -34,19 +34,19 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
     @Override
     public void onBindViewHolder(@NonNull ContactsViewHolder holder, int position) {
 
-        // getting the Contact object at the selected position
-        final Contact selectedContact = contactsList.get(position);
+        // getting the Contact object at the certain position
+        final Contact contact = contactsList.get(position);
 
-        // setting the TextView with the name of the selected contact
-        holder.tvContactName.setText(selectedContact.getUsername());
+        // setting the TextView with the name of the contact
+        holder.tvContactName.setText(contact.getUsername());
 
-        // checking if the selected contact has a default picture or has uploaded his desired one
+        // checking if the contact has a default picture or has uploaded his desired one
         // if the picture is default, we set the ImageView with the picture from mipmap folder
-        if (selectedContact.getImageURL().equals("default")){
+        if (contact.getImageURL().equals("default")){
             holder.profileImage.setImageResource(R.mipmap.ic_launcher);
         }else {
             // if there is a uploaded picture , we set that one to ImageView
-            Glide.with(mContext).load(selectedContact.getImageURL()).into(holder.profileImage);
+            Glide.with(mContext).load(contact.getImageURL()).into(holder.profileImage);
         }
 
 

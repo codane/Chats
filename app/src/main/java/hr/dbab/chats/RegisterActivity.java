@@ -98,7 +98,7 @@ public class RegisterActivity extends AppCompatActivity {
                     // Creating a new node called Users in our FirebaseDatabase and under that node we create a new user with his id
                     dbRef = FirebaseDatabase.getInstance().getReference("Users").child(userID);
 
-                    // Getting the data for new user to store in FirebaseDatabase
+                    // Getting the data for a new user to store in FirebaseDatabase
                     HashMap<String, String> hashMap = new HashMap<>();
                     hashMap.put("id", userID);
                     hashMap.put("username", username);
