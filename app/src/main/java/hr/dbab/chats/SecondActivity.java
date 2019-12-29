@@ -16,11 +16,6 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class SecondActivity extends AppCompatActivity {
 
-    private Toolbar mToolbar;
-    private ViewPager mPager;
-    private TabLayout mTabLayout;
-    private TabsAdapter mTabsAdapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,18 +23,18 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         // Instantiating the toolbar and setting it as ActionBar
-        mToolbar = findViewById(R.id.toolbar_main);
+        Toolbar mToolbar = findViewById(R.id.toolbar_main);
         setSupportActionBar(mToolbar);
         // Set the title of the toolbar
         getSupportActionBar().setTitle("Chats");
 
         // Instantiating a ViewPager and our adapter
-        mPager = findViewById(R.id.view_pager);
-        mTabsAdapter = new TabsAdapter(getSupportFragmentManager());
+        ViewPager mPager = findViewById(R.id.view_pager);
+        TabsAdapter mTabsAdapter = new TabsAdapter(getSupportFragmentManager());
         mPager.setAdapter(mTabsAdapter);
 
-        // Instantianting the TabLayout and setting it up with ViewPager
-        mTabLayout = findViewById(R.id.tab_layout);
+        // Instantiating the TabLayout and setting it up with ViewPager
+        TabLayout mTabLayout = findViewById(R.id.tab_layout);
         mTabLayout.setupWithViewPager(mPager);
 
     }
