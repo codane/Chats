@@ -1,6 +1,7 @@
 package hr.dbab.chats;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,6 +49,17 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
             // if there is a uploaded picture , we set that one to ImageView
             Glide.with(mContext).load(contact.getImageURL()).into(holder.profileImage);
         }
+
+        // when clicked on the contact, it will send the user to MessageActivity
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, MessageActivity.class);
+                intent.putExtra("contactid", contact.getId());
+                mContext.startActivity(intent);
+
+            }
+        });
 
 
     }

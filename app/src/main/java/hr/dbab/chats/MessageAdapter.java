@@ -24,9 +24,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     private List<Message> messageList;
     private String imageURL;
 
-    public MessageAdapter(Context mContext, List<Message> messageList) {
+    public MessageAdapter(Context mContext, List<Message> messageList, String imageURL) {
         this.mContext = mContext;
         this.messageList = messageList;
+        this.imageURL = imageURL;
     }
 
     @NonNull
@@ -50,7 +51,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         // setting the TextView with the message text
         holder.tvShowMessage.setText(message.getMessageText());
 
-        
+
         if (imageURL.equals("default")){
             holder.messageProfileImage.setImageResource(R.mipmap.ic_launcher);
         }else{
