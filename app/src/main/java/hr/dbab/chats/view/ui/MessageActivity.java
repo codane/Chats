@@ -1,4 +1,4 @@
-package hr.dbab.chats;
+package hr.dbab.chats.view.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +29,10 @@ import java.util.HashMap;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import hr.dbab.chats.R;
+import hr.dbab.chats.model.Contact;
+import hr.dbab.chats.model.Message;
+import hr.dbab.chats.view.adapter.MessageAdapter;
 
 public class MessageActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package hr.dbab.chats;
+package hr.dbab.chats.view.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,6 +15,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import java.util.List;
+
+import hr.dbab.chats.R;
+import hr.dbab.chats.model.Message;
 
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageViewHolder> {
 

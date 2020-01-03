@@ -1,4 +1,4 @@
-package hr.dbab.chats;
+package hr.dbab.chats.model;
 
 public class Contact {
 

@@ -11,15 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MessageActivity"></activity>
-        <activity android:name=".SecondActivity" />
+        <activity android:name=".view.ui.MessageActivity"></activity>
+        <activity android:name=".view.ui.SecondActivity" />
         <activity
-            android:name=".RegisterActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".view.ui.RegisterActivity"
+            android:parentActivityName=".view.ui.MainActivity" />
         <activity
-            android:name=".LoginActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:name=".view.ui.LoginActivity"
+            android:parentActivityName=".view.ui.MainActivity" />
+        <activity android:name=".view.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

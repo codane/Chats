@@ -1,4 +1,4 @@
-package hr.dbab.chats;
+package hr.dbab.chats.view.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
+
+import hr.dbab.chats.view.ui.MessageActivity;
+import hr.dbab.chats.R;
+import hr.dbab.chats.model.Contact;
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ContactsViewHolder> {
 

@@ -1,4 +1,4 @@
-package hr.dbab.chats;
+package hr.dbab.chats.view.ui;
 
 
 import android.os.Bundle;
@@ -22,6 +22,10 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import hr.dbab.chats.R;
+import hr.dbab.chats.model.Contact;
+import hr.dbab.chats.view.adapter.ContactsAdapter;
 
 
 /**

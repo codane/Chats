@@ -1,4 +1,4 @@
-package hr.dbab.chats;
+package hr.dbab.chats.view.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import hr.dbab.chats.R;
 
 
 public class LoginActivity extends AppCompatActivity {
